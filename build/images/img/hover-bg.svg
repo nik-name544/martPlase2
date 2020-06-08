@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="361" height="230"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="0%"><stop offset="0%" stop-color="#0674EC"/><stop offset="46%" stop-color="#3D5ED7"/><stop offset="100%" stop-color="#7347C1"/></linearGradient></defs><path fill-rule="evenodd" opacity=".902" fill="#009688" d="M4 0h353a4 4 0 014 3.999V230H0V3.999A4 4 0 014 0z"/><path fill="url(#a)" d="M4 0h353a4 4 0 014 3.999V230H0V3.999A4 4 0 014 0z"/></svg>
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="361px" height="230px">
+<defs>
+<linearGradient id="PSgrad_0" x1="100%" x2="0%" y1="0%" y2="0%">
+  <stop offset="0%" stop-color="rgb(6,116,236)" stop-opacity="1" />
+  <stop offset="46%" stop-color="rgb(61,94,215)" stop-opacity="1" />
+  <stop offset="100%" stop-color="rgb(115,71,193)" stop-opacity="1" />
+</linearGradient>
+
+</defs>
+<path fill-rule="evenodd"  opacity="0.902" fill="rgb(0, 150, 136)"
+ d="M4.000,-0.000 L357.000,-0.000 C359.209,-0.000 361.000,1.790 361.000,3.999 L361.000,230.000 L0.000,230.000 L0.000,3.999 C0.000,1.790 1.791,-0.000 4.000,-0.000 Z"/>
+<path fill="url(#PSgrad_0)"
+ d="M4.000,-0.000 L357.000,-0.000 C359.209,-0.000 361.000,1.790 361.000,3.999 L361.000,230.000 L0.000,230.000 L0.000,3.999 C0.000,1.790 1.791,-0.000 4.000,-0.000 Z"/>
+</svg>

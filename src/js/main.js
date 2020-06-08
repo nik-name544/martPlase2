@@ -92,7 +92,15 @@ $(function () {
       $('.items__cards').addClass("grid");
       $('.items__cards').removeClass("list");
     });
-  
+    
+    $('.header__profile-img').on("click", function () {
+      $('.header__profile-menu').toggleClass("active");
+    });
+
+    $('.header__icons-cart').on("click", function () {
+      $('.header__icons-cart-menu').toggleClass("active");
+    });
+
     var mixer = mixitup('.newest__inner-box');
   
   
