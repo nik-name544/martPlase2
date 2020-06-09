@@ -101,6 +101,11 @@ $(function () {
       $('.header__icons-cart-menu').toggleClass("active");
     });
 
+    $('.header__icons-mail').on("click", function () {
+      $('.header__icons-mail-menu').toggleClass("active");
+    });
+
+
     var mixer = mixitup('.newest__inner-box');
   
   
