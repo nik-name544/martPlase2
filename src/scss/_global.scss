@@ -396,6 +396,19 @@ body::-webkit-scrollbar-thumb {
     }
   }
 
+  &__subtitle {
+    font-weight: 300;
+    font-size: 30px;
+    color: #f3f3f8;
+    padding-bottom: 30px;
+  }
+
+  &__title--big {
+    font-weight: 500;
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+
   &__bottom-list {
     display: inline-block;
     position: relative;
