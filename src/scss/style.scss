@@ -227,6 +227,93 @@
         right: 40px;
     }
 
+    &__icons-noti-menu-item--commented,
+    &__icons-noti-menu-item--wroted,
+    &__icons-noti-menu-item--purchased,
+    &__icons-noti-menu-item--added {
+        padding: 16px 0;
+        display: flex;
+        border-bottom: 1px solid #e8ebf0;
+    }
+
+    &__icons-noti-menu-item:last-child {
+        border-bottom: none;
+        padding-top: 18px;
+        padding-bottom: 8px;
+        display: flex;
+
+        .header__icons-noti-menu-img {
+            margin-bottom: 19px;
+        }
+    }
+
+    &__icons-noti-menu-circle--commented,
+    &__icons-noti-menu-circle--purchased,
+    &__icons-noti-menu-circle--wroted,
+    &__icons-noti-menu-circle--added {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        position: absolute;
+        right: 25px;
+        padding: 8px;
+    }
+
+    &__icons-noti-menu-circle--added {
+        background-color: #e6f1fd;
+    }
+
+    &__icons-noti-menu-circle--purchased {
+        background-color: #fff0f0;
+    }
+
+    &__icons-noti-menu-circle--wroted {
+        background-color: #effaeb;
+    }
+
+    &__icons-noti-menu-circle--commented {
+        background-color: #f1ecf9;
+    }
+
+    &__icons-noti-menu-name,
+    &__icons-noti-menu-status,
+    &__icons-noti-menu-content {
+        display: inline-block;
+    }
+
+    &__icons-noti-menu-img {
+    }
+
+    &__icons-noti-menu-content {
+        padding-left: 15px;
+    }
+
+    &__icons-noti-menu-name {
+        font-weight: 500;
+        font-size: 16px;
+        color: #333333;
+        padding-bottom: 5px;
+        margin-top: -3px;
+    }
+
+    &__icons-noti-menu-status {
+        font-weight: 400;
+        font-size: 15px;
+        color: #747a86;
+    }
+
+    &__icons-noti-menu-title {
+        color: $light__blue;
+        font-size: 15px;
+        padding-bottom: 5px;
+    }
+
+    &__icons-noti-menu-time {
+        font-size: 14px;
+        color: #747a86;
+        padding-bottom: 5px;
+    }
+
     &__icons-noti-span {
         right: 25px;
         min-width: 26px;
@@ -247,10 +334,12 @@
         border-radius: 50px;
     }
 
+    &__icons-noti-menu.active,
     &__icons-mail-menu.active {
         transform: translateY(0%);
     }
 
+    &__icons-noti-menu,
     &__icons-mail-menu {
         transition: linear 0.5s;
         position: absolute;
@@ -260,7 +349,7 @@
         width: 370px;
         z-index: 2;
         border-top: 1px solid $light__blue;
-        transform: translateY(-200%);
+        transform: translateY(-300%);
         box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
         border-bottom-left-radius: 5px;
         border-bottom-right-radius: 5px;
@@ -276,6 +365,10 @@
             top: -11px;
             right: 28px;
         }
+    }
+
+    &__icons-noti-menu {
+        right: 19px;
     }
 
     &__icons-mail-menu-head {
@@ -357,6 +450,7 @@
         }
     }
 
+    &__icons-noti-menu-img,
     &__icons-mail-menu-img {
         width: 40px;
         height: 40px;
@@ -381,6 +475,15 @@
         padding-left: 15px;
         padding-top: 13px;
         font-weight: 400;
+    }
+
+    &__icons-noti-menu-head {
+        // border-bottom: none;
+        padding: 0 0 20px;
+    }
+
+    &__icons-noti-menu {
+        padding: 25px 25px 0;
     }
 
     &__icons-cart::before {
@@ -550,15 +653,111 @@
         display: flex;
         padding-left: 0;
         text-transform: uppercase;
+
+        &:hover {
+            color: $light__blue;
+        }
     }
 
     &__points {
         padding-right: 35px;
-        cursor: pointer;
         transition: all 0.5s;
-        &:hover {
-            opacity: 0.5;
+        height: 80px;
+
+        .header__navigation-drop--home,
+        .header__navigation-drop--all,
+        .header__navigation-drop--wordpress,
+        .header__navigation-drop {
+            display: none;
         }
+
+        &:hover {
+            .header__navigation-drop {
+                border-top: 1px solid $light__blue;
+                display: flex;
+                max-width: 1140px;
+                color: #000000;
+                width: 100%;
+                margin: 0 auto;
+                justify-content: space-between;
+                box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+                background-color: #fff;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 180px;
+                z-index: 3;
+                padding: 24px 28px;
+                text-transform: none;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+            }
+
+            .header__navigation-drop--home,
+            .header__navigation-drop--all,
+            .header__navigation-drop--wordpress {
+                border-top: 1px solid $light__blue;
+                display: flex;
+                background-color: #fff;
+                text-transform: none;
+                border-bottom-left-radius: 5px;
+                border-bottom-right-radius: 5px;
+                top: 180px;
+                position: absolute;
+                padding: 20px;
+                box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+            }
+
+            .header__navigation-drop-point {
+                a {
+                    padding: 7.5px 10px 7.5px;
+                    border-radius: 5px;
+                    transition: linear 0.5s;
+                    font-size: 15px;
+                    text-transform: none;
+                    color: #54667a;
+
+                    &:hover {
+                        background-color: $light__blue;
+                        color: #ffffff;
+                    }
+                }
+            }
+
+            .header__navigation-drop-head {
+                display: flex;
+                width: 100%;
+            }
+
+            .header__navigation-drop-head-title {
+                padding-bottom: 10px;
+                border-bottom: 1px solid #e8ebf0;
+                font-weight: 500;
+                font-size: 16px;
+            }
+            .header__navigation-drop-others,
+            .header__navigation-drop-dashboard,
+            .header__navigation-drop-MartPlace {
+                column-count: 2;
+                column-gap: 59px;
+                padding: 25px 0 0;
+
+                li,
+                a {
+                    font-weight: 400;
+                    font-size: 15px;
+                    color: #54667a;
+                    text-transform: none;
+                }
+            }
+
+            .header__navigation-drop-dashboard {
+                column-count: 1;
+            }
+        }
+    }
+
+    &__navigation-drop {
     }
 }
 
