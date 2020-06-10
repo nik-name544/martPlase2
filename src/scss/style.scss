@@ -3804,6 +3804,20 @@
             margin-top: 15px;
         }
     }
+
+    &__head-text--recover {
+        text-align: left;
+    }
+}
+
+.recover {
+    form {
+        button {
+            margin-top: 35px;
+            margin-bottom: 5px;
+        }
+    }
+
 }
 
 // register end
