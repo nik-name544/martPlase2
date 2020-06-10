@@ -706,6 +706,7 @@
                 position: absolute;
                 padding: 20px;
                 box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+                z-index: 3;
             }
 
             .header__navigation-drop-point {
@@ -3671,6 +3672,96 @@
 }
 
 // how-it-works end
+// register start
+
+.register {
+    background-color: #eff1f5;
+    padding: 70px 0 120px;
+
+    &__inner {
+        background-color: #ffffff;
+        padding: 60px 0;
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        margin: 0 auto;
+        max-width: 555px;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    &__head {
+        border-bottom: 1px solid #e8ebf0;
+    }
+
+    &__head-title {
+        font-size: 26px;
+        margin-bottom: 25px;
+    }
+
+    &__head-text {
+        font-size: 16px;
+        color: #555555;
+        padding: 0 60px 35px;
+        line-height: 28px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        padding: 0px 50px;
+
+        label {
+            font-weight: 500;
+            font-size: 16px;
+            text-align: start;
+            padding-bottom: 15px;
+            padding-top: 30px;
+        }
+
+        input {
+            background-color: #f4f5f8;
+            border: none;
+            padding: 18px 20px 20px;
+
+            &::placeholder {
+                font-size: 16px;
+                color: #898f96;
+            }
+        }
+
+        button {
+            color: #ffffff;
+            background-color: $light__blue;
+            border-radius: 50px;
+            padding: 15px 40px;
+            border: none;
+            max-width: 190px;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: linear .5s;
+
+            &:hover {
+                background-color: #fff;
+                border: 1px solid $light__blue;
+                color: $light__blue;
+            }
+        }
+    }
+
+    &__acc {
+        text-align: left;padding: 0px 50px;
+        font-size: 16px;
+        color: #898f96;
+
+        a {
+            color: $light__blue;
+        }
+    }
+}
+
+// register end
 //-----------------------------------------------------------------------------------------------------------
 //
 //                                                    END CODE
