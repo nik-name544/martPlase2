@@ -3673,7 +3673,7 @@
 
 // how-it-works end
 // register start
-
+.login,
 .register {
     background-color: #eff1f5;
     padding: 70px 0 120px;
@@ -3740,23 +3740,68 @@
             margin-top: 30px;
             margin-bottom: 40px;
             cursor: pointer;
-            transition: linear .5s;
+            transition: linear 0.5s;
 
             &:hover {
-                background-color: #fff;
-                border: 1px solid $light__blue;
-                color: $light__blue;
+                background-color: $purple;
             }
         }
     }
 
     &__acc {
-        text-align: left;padding: 0px 50px;
+        text-align: left;
+        padding: 0px 50px;
         font-size: 16px;
         color: #898f96;
 
         a {
             color: $light__blue;
+        }
+    }
+}
+
+.login {
+    &__inner {
+        padding: 55px 0;
+    }
+
+    &__head-title {
+        margin-bottom: 13px;
+    }
+
+    &__head-text {
+        padding: 0 60px 25px;
+    }
+
+    &__lost {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 45px 5px 50px;
+        font-size: 16px;
+        color: #898f96;
+
+        a {
+            color: $light__blue;
+        }
+    }
+
+    &__remember {
+        input {
+            margin-right: 15px;
+            position: relative;
+            top: 4px;
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    form {
+        input {
+            padding: 15px 20px;
+        }
+
+        button {
+            margin-top: 15px;
         }
     }
 }
