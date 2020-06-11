@@ -93,10 +93,11 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 }
 
+.rate-star-big,
 .rate-star {
   display: inline-block !important;
   margin-right: 13px;
-  background-image: url(../images/img/rate-star.svg);
+  // background-image: url(../images/img/rate-star.svg);
 }
 
 .card {

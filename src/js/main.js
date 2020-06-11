@@ -19,6 +19,13 @@ $(function () {
     ratedFill: "#ffc000"
   });
 
+  $(".rate-star-big").rateYo({
+    rating: 4.5,
+    starWidth: "16px",
+    readOnly: true,
+    ratedFill: "#ffc000"
+  });
+
   $('.create__search-click').on('click', function () {
     $('.create__search-categories').slideToggle();
   });
@@ -121,6 +128,16 @@ $(function () {
     $('.header__profile-menu').removeClass("active");
   });
 
+  $('input, select').styler();
+
+  $('.single-product__tabs .tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.single-product__tabs').find('.tab-item').removeClass('active-tab').hide();
+    $('.single-product__tabs .tabs').find('.tab').removeClass('active');
+    $(this).addClass('active');
+    $('#' + id).addClass('active-tab').fadeIn();
+    return false;
+});
 
 
   var mixer = mixitup('.newest__inner-box');
