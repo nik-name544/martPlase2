@@ -40,7 +40,16 @@ $(function () {
     slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: 'linear',
-    appendArrows: '.followers__arrows-wrap'
+    appendArrows: '.followers__arrows-wrap',
+    responsive: [
+      {
+        breakpoint: 1201,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      }
+    ]
 
   });
 
@@ -128,6 +137,11 @@ $(function () {
     $('.header__profile-menu').removeClass("active");
   });
 
+
+  $('.header__search-menu-btn-wrapper').on('click', function () {
+    $('.navigation__menu, .navigation__content').toggleClass('list');
+  });
+
   $('input, select').styler();
 
   $('.single-product__tabs .tab').on('click', function (event) {
@@ -137,7 +151,7 @@ $(function () {
     $(this).addClass('active');
     $('#' + id).addClass('active-tab').fadeIn();
     return false;
-});
+  });
 
 
   var mixer = mixitup('.newest__inner-box');

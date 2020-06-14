@@ -104,6 +104,7 @@ gulp.task("style", function () {
 			'node_modules/rateyo/src/jquery.rateyo.css',
 			'node_modules/ion-rangeslider/css/ion.rangeSlider.css',
 			'node_modules/jquery-form-styler/dist/jquery.formstyler.css' , 
+			'node_modules/jquery-form-styler/dist/jquery.formstyler.theme.css' ,
 		])
 		.pipe(concat("libs.min.css")) //склеиваем их в один файл с указанным именем
 		.pipe(cssmin()) //минифицируем полученный файл
