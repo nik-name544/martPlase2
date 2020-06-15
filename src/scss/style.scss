@@ -4928,6 +4928,55 @@
     }
 }
 
+.blog__menu-btn-wrapper {
+    justify-content: space-between;
+    left: 15px;
+    top: 38px;
+    position: relative;
+    height: 38px;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.blog__menu-btn {
+    width: 30px;
+    height: 1px;
+    background-color: $light__blue;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.blog__content.off {
+    display: none;
+}
+
+.blog__aside.on {
+    display: block;
+    max-width: 100%;
+
+    .blog__aside-item-banner {
+        text-align: center;
+        width: 100%;
+    }
+
+    .blog__aside-item-tags {
+        padding: 20px 10px;
+    }
+
+    .blog__aside-item-tags a {
+        column-count: 3;
+        column-gap: 10px;
+        margin: 5px auto;
+        max-width: 131px;
+        width: 100%;
+    }
+
+    .search__form {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+}
+
 // blog end
 
 //-----------------------------------------------------------------------------------------------------------
