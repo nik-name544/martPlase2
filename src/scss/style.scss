@@ -4220,6 +4220,7 @@
     &__aside {
         max-width: 360px;
         width: 100%;
+        transition: linear 0.5s;
     }
 
     &__aside-item {
@@ -4640,6 +4641,28 @@
     }
 }
 
+.single-product__menu-btn {
+    background-image: url(../images/img/arrow-circle-right.svg);
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    margin-top: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: none;
+}
+
+.single-product__aside.on {
+    transform: translateX(0);
+    z-index: 5;
+    background-color: #fff;
+    left: 0;
+
+    .single-product__aside-item {
+        margin-bottom: 0;
+    }
+}
+
 .jq-checkbox {
     border-radius: 50%;
     border: 4px solid #e6e9ed;
@@ -4963,6 +4986,7 @@
     justify-content: space-between;
     left: 15px;
     top: 38px;
+
     position: relative;
     height: 38px;
     flex-direction: column;

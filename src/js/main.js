@@ -152,6 +152,11 @@ $(function () {
     $('.items__aside').toggleClass('on');
   });
 
+  $('.single-product__menu-btn').on('click', function () {
+    $('.single-product__aside').toggleClass('on');
+  });
+
+
   $('input, select').styler();
 
   $('.single-product__tabs .tab').on('click', function (event) {
