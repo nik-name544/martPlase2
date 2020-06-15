@@ -147,6 +147,11 @@ $(function () {
     $('.blog__aside').toggleClass('on');
   });
 
+  $('.items__menu-btn-wrapper').on('click', function () {
+    $('.items__cards').toggleClass('off');
+    $('.items__aside').toggleClass('on');
+  });
+
   $('input, select').styler();
 
   $('.single-product__tabs .tab').on('click', function (event) {

@@ -3421,6 +3421,37 @@
     }
 }
 
+.items__menu-btn-wrapper {
+    justify-content: space-between;
+    left: 15px;
+    top: -10px;
+    position: relative;
+    height: 38px;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.items__menu-btn {
+    width: 30px;
+    height: 1px;
+    background-color: $light__blue;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.items__aside.on {
+    display: block;
+    max-width: 100%;
+
+    .items__aside-item {
+        max-width: 100%;
+        display: block;
+    }
+}
+
+.items__cards.off {
+    display: none;
+}
 // items end
 
 // error start
