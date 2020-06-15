@@ -1705,4 +1705,9 @@
     .single-product__tab-item span, .single-product__tab-item--num span {
         padding-right: 5px;
     }
+
+    .how-it-works--mid__img, .how-it-works__img {
+        max-width: 255px;
+        max-height: 275px;
+    }
 }
